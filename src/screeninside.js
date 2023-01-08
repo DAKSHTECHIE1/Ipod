@@ -4,7 +4,7 @@ import Right from './right'
 const Screeninside=(props)=>{
     return(
         <div className="screeninside">
-            <Left/>
+            <Left active={props.active} updateRender={props.updateRender}/>
             <Right/>
         </div>
     )

@@ -1,9 +1,19 @@
 import React from "react";
-const Inner=(props)=>{
-    return(
-        <div className="inner">
+class Inner extends React.Component{
+    constructor(){
+        super();
+    }
+    componentDidMount(){
+        var elem=document.getElementsByClassName('inner')
+        elem[0].addEventListener('click',()=>console.log('button'))
+    }
+    render(){
+            return(
+            <div className="inner">
 
-        </div>
-    )
+            </div>
+        )
+    }
 }
+    
 export default Inner;
