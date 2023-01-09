@@ -1,11 +1,8 @@
 import React from "react";
 class Inner extends React.Component{
-    constructor(){
-        super();
-    }
     componentDidMount(){
-        var elem=document.getElementsByClassName('inner')
-        elem[0].addEventListener('click',()=>console.log('button'))
+        var element=document.getElementsByClassName('inner');
+        element[0].addEventListener('click',this.props.updateScreen);
     }
     render(){
             return(

@@ -5,12 +5,13 @@ class App extends React.Component{
   constructor(){
     super();
     this.state = {
-      active:1
+      active:1,
+      screen:0
     };
   }
   handleActive=(event)=>{
     var active=this.state.active;
-    if(event.detail.distanceFromLast>3){
+    if(event.detail.distanceFromLast>11){
       active++;
       if(active===5){
           active=1;
@@ -18,7 +19,7 @@ class App extends React.Component{
       console.log('before',this.state.active);
       this.setState({active:active},()=>console.log(this.state.active));
   }
-  if(event.detail.distanceFromLast<-3){
+  if(event.detail.distanceFromLast<-11){
       // console.log('hello');
       active--;
       if(active===0){
@@ -31,14 +32,22 @@ class App extends React.Component{
 updateRender=()=>{
   this.setState({active:this.state.active},()=>console.log('update render'));
 }
-
+updateScreen=()=>{
+  this.setState({screen:this.state.active},()=>{
+      console.log('screen',this.state.screen,'active',this.state.active)
+  })
+}
+backToMenu=()=>{
+  this.setState({screen:0},()=>{
+    console.log('screen',this.state.screen,'active',this.state.active)
+})
+}
 
   render(){
-    const {active}=this.state;
+    const {active,screen}=this.state;
     return (
       <div className='App'>
-        <div>hello</div>
-        <Ipod active={active} handleActive={this.handleActive} updateRender={this.updateRender}/>
+        <Ipod active={active} handleActive={this.handleActive} updateRender={this.updateRender} screen={screen} updateScreen={this.updateScreen} backToMenu={this.backToMenu}/>
       </div>
     );
   }
