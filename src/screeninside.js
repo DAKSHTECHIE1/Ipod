@@ -1,12 +1,13 @@
 import React from "react";
 import Left from'./left'
 import Right from './right'
+//function to deal with what is to be displayed on the screen as per user's guidance!!
 const Screeninside=(props)=>{
     //if-else
     if(props.screen===0){ 
         return(
             <div className="screeninside">
-                <Left active={props.active} updateRender={props.updateRender}/>
+                <Left active={props.active}/>
                 <Right/>
             </div>
         )

@@ -1,6 +1,7 @@
 import React from "react";
 import ZingTouch from 'zingtouch';
 class Outer extends React.Component{
+    //to add the feature of changing the menu option selected via rotating cursor on the control component
     componentDidMount(){
         var a=document.getElementsByClassName('outer');
         var activeRegion = ZingTouch.Region(a[0]);

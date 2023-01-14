@@ -1,5 +1,6 @@
 import React from "react";
 class Left extends React.Component{
+    //function to update the color of selected menu option to blue and removing blue from earlier selected menu option
     componentDidUpdate(prevprops){
         var oldactive=prevprops.active;
         var elem='';

@@ -3,6 +3,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* defining css for whole ipod component */
 .Ipod{
     height:80vh;
     width:27vw;
@@ -12,6 +13,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* defining css for screen component */
 .screen{
     height: 50%;
     width:100%;
@@ -21,6 +23,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* defining css for sqaure component of screen*/
 .screeninside{
     position: relative;
     height:89%;
@@ -30,6 +33,7 @@ body{
     top:10%;
     border: 3px solid black;
 }
+/* defining css for left part of screen that is menu*/
 .left{
     position: relative;
     top:-15.8%;
@@ -37,6 +41,7 @@ body{
     width:50%;
     background-color:white;;
 }
+/* defining css for right part of screen*/
 .right{
     position: relative;
     left:50%;
@@ -46,12 +51,14 @@ body{
     background-image: url("https://i.pinimg.com/236x/68/ce/df/68cedf20e44aeeb72b18d3749a96ae8a--wallpaper-for-ipod-wallpaper-backgrounds.jpg");
     background-size: cover;
 }
+/* heading of ipod.js */
 .heading{
     margin: 25%;
     position: relative;
     top:7%;
     left:4%;
 }
+/* defining css for menu*/
 .list{
     position:relative;
     bottom:7.5vh;
@@ -83,6 +90,7 @@ li{
     position: relative;
     top:20%;
 }
+/* defining css for rotating based control of menu*/
 .outer{
     position: relative;
     /* background-color: aliceblue; */
@@ -109,6 +117,7 @@ li{
     left:6.0vw;
     top:4vh;
 }
+/* defining css for different icons on control component*/
 .ahead{
     position: relative;
     top:7vh;
@@ -136,9 +145,11 @@ li{
     background-image:url('https://cdn-icons-png.flaticon.com/128/8669/8669446.png');
     background-size: cover;
 }
+/* defining css for selected component of menu*/
 .bluer{
     background-color: rgb(129, 129, 219);
 }
+/* defining css for the next view after selecting a menu component*/
 .alternate{
     position: relative;
     text-align: center;
