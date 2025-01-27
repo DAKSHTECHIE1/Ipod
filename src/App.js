@@ -22,7 +22,7 @@ class App extends React.Component{
     var active=this.state.active;
     if(event.detail.distanceFromLast>11){
       active++;
-      if(active===5){
+      if(active===5){//bcoz active is from 1 to 4
           active=1;
       }
       console.log('before',this.state.active);

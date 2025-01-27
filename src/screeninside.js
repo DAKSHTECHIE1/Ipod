@@ -4,7 +4,7 @@ import Right from './right'
 //function to deal with what is to be displayed on the screen as per user's guidance!!
 const Screeninside=(props)=>{
     //if-else
-    if(props.screen===0){ 
+    if(props.screen===0){ //menu ke liye hoga//menu ke liye hoga
         return(
             <div className="screeninside">
                 <Left active={props.active}/>
